@@ -1,2 +1,2 @@
 # rock-paper-scissor
-a game
+RPS game with js
