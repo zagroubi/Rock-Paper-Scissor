@@ -1,0 +1,56 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+img {
+  width: 200px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.right-side,
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 20%;
+}
+.left-side {
+  left: 0;
+}
+.right-side{
+  right: 0;
+}
+.right-side img {
+  cursor: default;
+}
+.board {
+  position: relative;
+  height: 100vh;
+  width: 60%;
+  cursor: default;
+  z-index: 99;
+}
+#p1,
+#p2{
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  top: 15px;
+  color: rgb(51, 5, 94);
+}
+#p1 {
+  left: 150px;
+}
+#p2 {
+  right: 150px;
+}
